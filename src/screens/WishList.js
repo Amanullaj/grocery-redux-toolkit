@@ -10,7 +10,7 @@ const WishList = () => {
     const [wishListItems, setWishListItems] = useState(items.data)
   return (
     <View>
-      <Header title={'Wishlist Items'}/>
+      <Header title={'Wishlist Items'} rightIcon={require('../images/cart.png')}/>
       <FlatList data={wishListItems} renderItem={({item,index})=>{
         return(
             <TouchableOpacity style={styles.container1} onPress={()=>navigation.navigate('ProductDetails',{data: item})}>

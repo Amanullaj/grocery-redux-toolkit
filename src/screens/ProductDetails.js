@@ -5,7 +5,6 @@ import {useNavigation,useRoute} from '@react-navigation/native'
 import { useDispatch } from 'react-redux'
 import { addItemToWishList } from '../redux/WishListSlice'
 import { addItemToCart } from '../redux/CartSlice'
-import AsyncStorage from '@react-native-async-storage/async-storage'
 
 
 const ProductDetails = () => {

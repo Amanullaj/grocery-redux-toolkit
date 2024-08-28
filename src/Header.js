@@ -3,7 +3,7 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import { useNavigation } from '@react-navigation/native';
 
-const{height, width} = Dimensions.get('window');
+
 const Header = ({title,leftIcon,rightIcon,onClickLeftIcon,onClickRightIcon,}) => {
   const cartItems = useSelector(state => state.cart);
   const navigation = useNavigation();
@@ -29,7 +29,7 @@ const Header = ({title,leftIcon,rightIcon,onClickLeftIcon,onClickRightIcon,}) =>
 export default Header
 
 const styles = StyleSheet.create({
-    header : { backgroundColor:'#6699ff',height:60,width:width,padding:10,flexDirection:'row',justifyContent:'space-between',alignItems:'center'},
+    header : { backgroundColor:'#6699ff',height:60,width:'100%',padding:10,flexDirection:'row',justifyContent:'space-between',alignItems:'center'},
     img : {height:40,width:40,tintColor:'white'},
     txt : {fontSize:25,color:'white',fontWeight:'bold'}
 })
