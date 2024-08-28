@@ -23,7 +23,7 @@ const Cart = () => {
     }
   return (
     <View style={{flex:1}}>
-      <Header title={'Cart Items'} leftIcon={require('../images/back.png')}
+      <Header title={'Cart Items'} leftIcon={require('../images/back.png')} rightIcon={require('../images/cart.png')}
       onClickLeftIcon={()=>navigation.goBack()}/>
       <FlatList data={cartItems} renderItem={({item,index})=>{
         return(

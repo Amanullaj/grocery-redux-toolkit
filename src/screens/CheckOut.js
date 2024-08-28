@@ -23,7 +23,8 @@ const CheckOut = () => {
   return (
     <View style={styles.container}>
         
-      <Header leftIcon={require('../images/back.png')} onClickLeftIcon={()=>navigation.goBack()}
+      <Header leftIcon={require('../images/back.png')} rightIcon={require('../images/cart.png')}
+       onClickLeftIcon={()=>navigation.goBack()}
       title={'CheckOut'}/>
       <View style={{flexDirection:'row',justifyContent:'space-between',borderBottomWidth:0.5,margin:10}}>
       <Text style={{fontSize:20,fontWeight:'600'}}>Total</Text>
